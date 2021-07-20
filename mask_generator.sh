@@ -20,10 +20,10 @@ do
 		letter=$(echo $pass | cut -c$position)
 		if [[ $minuscule == *"$letter"* ]]
 		then
-			mask+="?u"
+			mask+="?l"
 		elif [[ "$majuscule" == *"$letter"* ]]
 		then
-			mask+="?l"
+			mask+="?u"
 		elif [[ "$dec" == *"$letter"* ]]
 		then
 			mask+="?d"		
